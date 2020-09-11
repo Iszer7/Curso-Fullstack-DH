@@ -1,0 +1,19 @@
+1)¿Para qué queremos un sistema de versionado de archivos?
+2)¿Trabajaste con algún sistema de versionado? ¿Cuál?
+3)¿Qué diferencias hay entre Git y Github?
+4)¿Cómo guardaron las prácticas de las clases de JS?
+
+1)Para tener cronologica sobre lo sucedido, para poder restaurar y tener vesiones estables sobre un proyecto
+Ademas de poder saber que cambios se hicieron y donde
+2)Conocia git, pero no lo use con un equipo. Solo yo
+3)Git es donde se va hacer el contron de versiones, es aquel que a traves de la consola
+nos da los comandos correspondientes para poder subirlo, bajarlo, commitear etc.
+GitHub es la nube, donde se sube y se almacena todo. Es donde se encuentra los repositorios
+4)La guarde de la siguiente forma, y todas las carpetas correspondientes
+git init
+git config user.name ""
+git config user.email ""
+git add .
+git status para verificar
+git commit -m ""
+git push origin master

@@ -24,4 +24,6 @@ git clone (pegar url del repositorio)
 EJ:
 git clone https://github.com/Iszer7/Curso-Fullstack-DH.git
 
-//Para actualizar un repositorio que ya tengas
+//Para actualizar un repositorio que ya tengas, se mantiene sincronizados
+//Solo baja esos archivos que si surgieron modificaciones
+git pull origin master
