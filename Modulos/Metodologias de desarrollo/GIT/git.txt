@@ -16,5 +16,12 @@ git remote add origin https://github.com/Iszer7/Curso-Fullstack-DH.git
 8)git commit -m "" (Dentro de "" va el mensaje de que hiciste)
 9)git log //Nos muestra todos los commits hechos y por quien
 
-//Subiendo archivos -> solo se suben los commits ya hechos
-10)git push
+//Subiendo archivos -> se tiene que usar "add" primero y solo se suben los commits ya hechos
+10)git push origin master
+
+//Bajar archivos, si es que no los tenes
+git clone (pegar url del repositorio)
+EJ:
+git clone https://github.com/Iszer7/Curso-Fullstack-DH.git
+
+//Para actualizar un repositorio que ya tengas
