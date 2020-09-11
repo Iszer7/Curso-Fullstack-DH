@@ -1,0 +1,21 @@
+1) ¿Por qué es necesario saber que existe el formato JSON?
+2) ¿Qué hace JSON.parse() y para qué sirve?
+3) ¿Qué hace el método slice() en un string?
+4) ¿Para qué sirve el método trim() en un string?
+5) ¿Si queremos reemplazar una porción de texto dentro de un string qué podemos usar?
+6) ¿Qué es un obejto literal? ¿Cómo lo diferenciamos de un JSON?
+7) ¿Qué son las arrow functions? ¿Cuál es su diferencia con las funciones tradicionales?
+8) ¿Cuáles son los nuevos condicionales que aprendiste? ¿En qué se diferencian con los que ya conocías?
+9) ¿Cuáles son los principales usos del ciclo for?
+10) ¿En qué se diferencian while y do-while?
+
+1) Porque nos va a permitir poner recibir y dar informacion en este formato, ya que es el medio comun por el que se manejan lenguajes y servidores al recibir informacion
+2) El JSON.parse sirve para pasar informacion tipo string a poder manipular el dato en cuestion
+3) El metodo slice se compone por un (desde, hasta) el cual el 0 es el primer valor de un string. Este corta y devuelve parte de un string
+4) el metodo trim nos sirve para sacar los espacios (si los hubiera) en blancos al principio de un string
+5) podemos usar el metodo replace que nos sirve para reemplazar una parte o todo del string en cuestion
+6) Un objeto literal es una estructura de dato que representa algo en la realidad, este puede tener metodos y propiedades. La diferencia con JSON es que este no puede tener propiedades y solo sirve para pasar o recibir como informacion
+7) Las arrow functions son lo mismo que una funcion tradicional pero son siempre anonimas, salvo que se pueden usar en una variable para que sea una funcion expresada. Nos permiten escribir la sintaxis mas compacta y legible.
+8) El ternario es un codicional como el if, pero mas compacto y expresivo. El switch nos permiten seleccionar casos muy especificos, y trabajan con casos (cases) tambien teniendo un case como Default
+9) Para iterar mientras una condicion se cumpla. Se puede usar en arrays o diferentes condiciones como comparando con un numero
+10) La gran diferencia es que el Do-While ejecuta el codigo almenos una vez y luego pregunta para seguir iterando, si es verdadero sale del bloque. El while primero pregunta y luego ejecuta

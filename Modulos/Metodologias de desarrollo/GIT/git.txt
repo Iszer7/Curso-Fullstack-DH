@@ -1,0 +1,20 @@
+//Creando repositorio local
+1) abrir en una carpeta que queramos como repositorio "git BASH"
+2) git init //crea un repositorio
+3) git config user.name "pepe" //agrega usuario de github
+3) git config user.email "pepe@mail.com" //agrega el mail
+4) Crear un repositorio en GitHub y copiar la URL del mismo
+5) git remote add origin (pegar la url del repositorio)
+EJ:
+git remote add origin https://github.com/Iszer7/Curso-Fullstack-DH.git
+
+//Agregando archivos al repositorio
+6)git add . //Agrega todo los archivos de la carpeta
+7)git status //Para ver el estado de la carpeta, que archivos no estan agregados o archivos modificados
+
+//Confirmando archivos
+8)git commit -m "" (Dentro de "" va el mensaje de que hiciste)
+9)git log //Nos muestra todos los commits hechos y por quien
+
+//Subiendo archivos -> solo se suben los commits ya hechos
+10)git push

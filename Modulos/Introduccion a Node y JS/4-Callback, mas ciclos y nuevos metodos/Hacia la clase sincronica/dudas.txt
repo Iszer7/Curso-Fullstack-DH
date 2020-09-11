@@ -1,0 +1,17 @@
+1) ¿Qué es un callback?
+2) ¿Cuáles son los nuevos métodos de arrays que aprendiste? ¿Qué podés hacer con ellos?
+3) ¿Cuáles son los nuevos condicionales que aprendiste? ¿En qué se diferencian de los anteriores?
+4) ¿Cómo trabajar con fechas en Javascript?
+5) ¿Cómo sacar parte de contenido de un array / objeto literal?
+
+1) Un callback es una funcion que se pasa como parametro de otra funcion
+2) Los nuevos metodos de array se usan con callbacks, 
+map devuelve un nuevo array modificado
+filter segun la condicion que se le pase, recorre el array y crea uno con los valores filtrados
+reduce devuelve un unico valor, teniendo un acumulador y un numero. El acumulador empieza en 0
+forEach recorre un array
+3) Los nuevos ciclos son For in que se usa para iterar objetos, y For Of que se usa para iterar arrays u strings
+4) con el objeto Date(), creando un new Date() en una variable. Tiene metodos como, getDate(), getDay(), getMonth(), getFullYear()
+5) Usando destructuracion, por ejemplo:
+let {nombre, edad} = persona
+let [primerArray, segundoArray, etc] = variablesDeUnArray

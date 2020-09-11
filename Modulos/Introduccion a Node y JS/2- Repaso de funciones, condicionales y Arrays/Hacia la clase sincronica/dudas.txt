@@ -1,0 +1,30 @@
+1)¿Para qué sirve una variable?
+2)¿En la vida real, qué sería una variable?
+3)¿Cuáles son los distintos tipos de datos?
+4)¿Con qué operadores trabaja JS?
+5)¿Para qué utilizamos las funciones? ¿Cuál es la diferencia entre ejecutar y declarar una función?
+6)¿Para qué sirven los condicionales? ¿En qué situaciones los usarías?
+7)¿Qué son los arrays? ¿Cuáles son sus métodos?
+
+1)Una variable sirve para alamcenar un dato
+2)Seria todo aquello que contiene algo, por ejemplo guardar algo en una caja
+3)Number, String, Boolean, NaN, undefined, null
+4)Con aritmeticos (+,-,/,*), de asignacion (=), condicional (>,==,!,&&,||)
+5)Una funcion sirve para poder subdividir las tareas en diferentes bloques de codigo.
+Una funcion expresada lleva una variable antes del "function" y el interprete lo 
+ejecuta una vez llegada a esa parte del codigo. Las declaradas se escriben 
+"function nombre_variable" y se ejecutan al principio del programa.
+6)Los condicionales nos permiten segun el estado en que este (true, false) pueda cambiar
+que accion haga despues, se suele usar para poner una o mas alternativas dependiendo de
+si la condicion es o no verdadera
+7)Los array son un tipo de objeto los cuales pueden contener todo los tipos de variables
+como strings, numeros, booleanos, etc. En el se guarda una serie de variables que se 
+encuentran dentro del [].
+Los metodos de array son, push para agregar un elemento al final del array, pop para
+sacar el ultimo elemento pero no recibe parametro, shift para sacar el primer elemento 
+no recibe parametro, unshift para agregar un elemento al principio del array, indexOf 
+para busca un elemento desde el principio del array que si no lo encuentra devuelve -1, 
+lastIndexOf que buscar un elemento desde el final y si no lo encuentra devuelve -1, 
+includes buscar un elemento dentro del array el cual devuelve un true or false y por 
+ultimo join el cual agrupa los elementos del array en un string el cual puede opcionalmente
+separar cada elemento poniendo un algo dentro del parametro.

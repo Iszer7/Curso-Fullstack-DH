@@ -1,0 +1,14 @@
+En la clase sincrónica de Introuducción a Node JS vamos a trabajar retomando los contenidos 
+vistos en el material online para lo cual te pedimos que traigas todas tus dudas. 
+Podés chequear si estás preparado/a con las siguientes preguntas o elaborar las propias.
+
+
+¿Para qué sirve Node? ¿Cómo lo puedo instalar en mi computadora?
+-Node sirve como una gran biblioteca de codigo ya hechos por terceros o por uno mismo para que sea 
+reutilizable dentro de nuestro trabajo. Se puede instalar yendo a la pagina de node.org, quedara
+almacenado en la pc.
+¿Cuál es la diferencia entre Node y NPM? 
+-Node es el entorno de ejecucion, y npm es los paquetes que se podran usar al instalarlos
+¿Qué es un módulo en el ambiente de Node?
+-Un modulo es como un libro en una gran biblioteca, el cual puede ser usado en cualquier momento dado
+dando funcionalidades como la reutilizacion de codigo ya escrito previamente y externo al proyecto.

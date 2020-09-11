@@ -1,0 +1,29 @@
+NODEJS
+
+¿Por qué nació Node?¿Para qué sirve?
+Respuesta: Node sirve y se creo como entorno de ejecucion para JS, el cual permite ejecutarlo del lado del servidor pudiendo generar un sistema escalable y operaciones asincronas
+Enlace 1: https://apasionados.es/blog/nodejs-4430/
+
+¿Cuál es la diferencia entre Node y NPM?
+Respuesta: Node tiene un sistema de modulos, el cual el NPM es la integracion de cada modulo, es decir una libreria
+Enlance: https://www.genbeta.com/desarrollo/node-js-y-npm
+
+¿Qué es un módulo en el ambiente de Node?
+Respuesta: Un modulo es una porcion de un programa, el cual nos permite subdividir las tareas
+Enlace: https://desarrolloweb.com/articulos/modulos-npm-nodejs.html
+
+Si se tuviera que definir el tipo de dato de un módulo requerido, ¿qué dato sería?
+Respuesta: Todo tipo de dato, los cuales pueden ser usados al exportarlos
+Enlace: https://www.todojs.com/modulo-js-para-navegador-y-node/
+
+Dentro del entorno client / server ¿Qué diferencia a un cliente de un servidor?
+Respuesta: La diferencia radica en que el cliente no puede tener acceso a todo lo que tiene el servidor, solo lo que el le permite
+Enlace: https://sites.google.com/site/infor4sanandres/diferencias-entre-cliente-y-servidor
+
+¿Para qué sirve el protocolo HTTP?
+Respuesta: Sirve como lenguaje para que el cliente y el servidor se entiendan
+Enlace: https://concepto.de/http/#:~:text=El%20http%20(del%20ingl%C3%A9s%20HyperText,mismo%20idioma%20a%20la%20hora
+
+¿Cuales son lo métodos más usados dentro del protocolo HTTP?
+Respuesta: Los metodos mas usados son GET, POST, PUT, DELETE, HEAD
+Enlace: https://diego.com.es/metodos-http#:~:text=Los%20m%C3%A9todos%20HTTP%20permiten%20comunicar,un%20resource%20bajo%20una%20URL&text=Los%20m%C3%A9todos%20m%C3%A1s%20importates%20de,%2C%20PUT%2C%20DELETE%20y%20HEAD.
