@@ -1,0 +1,12 @@
+1)¿De qué manera podemos vincular el CSS?
+2)¿Cuál es la manera más adecuada y estandarizada de hacerlo?
+3)¿Cuáles son las propiedades de CSS que te resultaron más útiles?
+¿Se te ocurre ?
+4)Y una pregunta que no es fácil de responder pero que es bueno empezar a pensar o investigar:
+¿Se te ocurre una buena manera de ordenar y no repetir tu CSS?
+
+1)A traves de un archivo externo o del mismo tag
+2)A traves del tag link
+3)color, background-color, font-size, 
+4)Una buena manera de ordenar el codigo es a traves de los tag semanticos mas importantes,
+hasta ir bajando a los menos relevantes
