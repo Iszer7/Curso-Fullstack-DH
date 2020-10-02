@@ -1,3 +1,5 @@
+INICIALIZAR UN PROYECTO
+
 1) (si no lo tengo instalado global en la pc):
 npm install express-generator -g 
 
@@ -14,6 +16,7 @@ express nombredelproyecto -—ejs
 
 ------------------------------------------------------
 NODEMON
+
 7)Instalar nodemon: npm install nodemon
 
 8)para ejecutar la app: nodemon start
@@ -23,3 +26,8 @@ GITIGNORE
 9)crear un archivo .gitignore
 10) Escribir: node_modules/*
 11).DS_Store
+-------------------------------------------------------
+CREAR RUTA
+
+Crear archivo dentro de view
+Agregarlo dentro de routes -> index.js

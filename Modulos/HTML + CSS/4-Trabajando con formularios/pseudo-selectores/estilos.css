@@ -1,0 +1,10 @@
+/*Si hay una etiqueta p en la segunda posicion de body, cambialo a amarillo */
+body p:nth-child(2) {
+    background-color: yellow;
+}
+
+/*A los hijos p del elemento body que sean impares pintalos de rojo*/
+/* ever es pares */
+body p:nth-child(odd) {
+    background-color: red;
+}
