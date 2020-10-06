@@ -1,0 +1,71 @@
+body {
+    font-family: 'Rubik';
+}
+
+.caja1,
+.caja2,
+.caja3 {
+
+    margin: 20px 0;
+    color: white;
+}
+
+.caja1 {
+    background-color: #330C2F;
+}
+
+.caja2 {
+    background-color: #7B287D;
+}
+
+.caja3 {
+    background-color: #7067CF;
+}
+
+.articulo1 {
+    /*
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+
+    ES LO MISMO
+    border: tamaño estilo color;
+    */
+    border: 3px solid red;
+}
+
+.articulo2 {
+    /*
+    Con padding da un espacio interno
+    
+    A LOS 4 LADOS
+    padding: top right bottom left (0px 0px 0px 0px)
+    margin: top right bottom left (0px 0px 0px 0px)
+
+    A DOS LADOS
+    padding: top-bottom right-left (0px 0px)
+    margin: top-bottom right-left (0px 0px)
+    */
+    background-color: green;
+    padding: 10px 50px 20px 15px;
+}
+
+.articulo3 {
+    /*
+    margin genera un espaciado externo
+    */
+    margin: 15px;
+    background-color: pink;
+}
+
+p span {
+    background-color: yellow;
+}
+
+/*
+    box-sizing: border-box;
+
+    esta propiedad descuenta automaticamente del ancho
+    y alto lo que agregamos en relleno y borde.
+    Solo se suma el margin!
+*/

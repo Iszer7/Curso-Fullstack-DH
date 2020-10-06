@@ -1,0 +1,13 @@
+header {
+    background-color: greenyellow;
+}
+
+.articulos_inline-block {
+    display: inline-block;
+    padding: 150px;
+}
+
+.articulos_block {
+    display: inline;
+    padding: 25px;
+}
