@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    background: #dedede;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+section {
+    width: 100%;
+    height: 900px;
+    background: pink;
+    border: 1px solid #e0e0e0;
+    /*FLEXBOX*/
+    display: flex;
+    flex-wrap: wrap;    /*para respetar el tamaño de cada elemento que tiene dentro, wrap-reverse invierte el orden*/
+    flex-direction: row;     /*puedo poner column para que los elementos se vean uno debajo del otro*/
+    justify-content: space-around; /*trabaja el eje main -> space-between, center, flex-start*/
+    align-items: center ;      /*trabaja el eje cross -> flex-end, flex-start, center*/
+}
+
+article {
+    width: 25%;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+}
+
+article img {
+    width: 100%;
+}
+
+article h2 {
+    margin-top: 8px;
+}
+
+/*ESTO ES PARA LOS HIJOS DENTRO DEL FLEX*/
+.art2 {
+    /*order: 1;   indica la ubicacion del elemento*/
+    /*flex-grow: 0.7; si hay espacio, le sede ese espacio a ese elemento, 1 es 100 % */
+    align-self: flex-start;   /*alinea este elemento solamente*/
+}
+
+@media (max-width: 500px) {
+    section {
+        flex-direction: column;
+    }
+    article {
+        width: 100%;
+    }
+}
+
+/*
+position: absolute -> es absoluto desde el body
+position: fixed -> se queda fijo
+position: relative -> es relativo al contenedor
+se usa top, right, bottom, left
+
+//Necesita un tipo de posicion, si o si
+z-index: 10 -> permite controlar el orden de las capas para que vaya mas adelante o atras
+*/
