@@ -1,0 +1,50 @@
+/*
+la medida "em" se usa para las letras nada mas
+height: 40vh -> ocupa el 40% del alto y se hace responsive (es necesario si o si)
+width: 30vw -> ocupa el 30% del ancho, es mejor seguir manejandose con porcentajes
+*/
+
+nav ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    width: 80%;
+    margin: 10px auto;
+}
+
+section article {
+    width: 100%;
+}
+
+section article img {
+    width: 100%;
+}
+
+ @media(min-width: 426px) {
+     section article {
+         width: 40%;
+         margin-left: 5%;
+         margin-right: 5%;
+         float: left;
+     }
+
+     section {
+         overflow: hidden;
+     }
+ }
+
+ @media(min-width: 769) {
+     section article {
+         width: 25%;
+         margin-left: 0%;
+         margin-right: 0%;
+     }
+ }
