@@ -1,15 +1,16 @@
 var express = require('express');
 var router = express.Router();
+const path = require('path');
 
 
 //Controllers
-const heroes = require('../controllers/heroesController');
+const heroesController = require(path.resolve(__dirname, '../controllers/heroesController'));
 
 //Routes
-router.get('/', heroes.home);
-router.get('/:id', heroes.detalle);
-router.get('/:id/:profesion?', heroes.detalleProfesion);
-router.get('/:id/:resenia?', heroes.detalleResenia);
-//const routerHeroes = require('..routes/heroes');
+router.get('/', heroesController.index);
+
+router.get('/:id/profesion', heroesController.profesion);
+
+router.get('/:id/resenia/:tipo?', heroesController.resenia);
 
 module.exports = router;

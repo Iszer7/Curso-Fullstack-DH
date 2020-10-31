@@ -1,46 +1,78 @@
-const fs = require('fs')
-let heroes = JSON.parse(fs.readFileSync('./database/heroes.json', 'utf-8'));
+const path = require('path');
+const {readFileSync} = require('fs');
 
-heroesController = {
-    home: function(req, res, next) {
-        console.log('Entraste a heroes');
-        res.send(heroes[0]);
+let datosHeroes = JSON.parse(readFileSync('./database/heroes.json', 'utf-8'));
+
+let controller = {
+    index: function(req, res, next) {
+        res.send(datosHeroes);
       },
-    detalle: function(req, res, next) {
-      console.log('Entraste a detalle');
-      
-      let idURL = req.params.id;
+      profesion: (req, res, next) => {
+        /*
+        let heroe = {};
+        for(let i=0; i < datosHeroes.length; i++) {
+          if(datosHeroes[i].id == id) {
+            heroe = datosHeroes[i];
+            return res.render("heroe", {
+              nombre: heroe.nombre,
+              profesion: heroe.profesion,
+              error:""
+            });
+          }
+        }*/
+        let id = req.params.id;
 
-      for (let i = 0; i < heroes.length; i++) {
-        if(idURL == heroes[i].id) {
-          res.send(heroes[i]);
+        let hero = datosHeroes.find(heroe => heroe.id == id);
+
+        let obj = {
+          nombre: hero.nombre,
+          profesion: hero.profesion,
+          error:""
         }
-      }
-      res.send('​No tenemos en nuestra base ningún héroe ni heroína con ese id.');
-    },
-    detalleProfesion: function(req, res, next) {
-      console.log('Entraste a detalle profesion');
 
-      let idURL = req.params.id;
+        let error = `no existe un heroe con el id: ${id}`;
 
-      if(idURL < heroes.length) {
-        res.send('Hola mi nombre es '+ heroes[idURL].nombre + ' y soy ' + heroes[idURL].profesion);
-      } else {
-        res.send('​No tenemos en nuestra base ningún héroe ni heroína con ese id.');
-      }
-    },
-    detalleResenia: function(req, res, next) {
-      
+        if (hero == undefined) {
+            return res.render("heroe", error)
+        }else {
+            return res.render("heroe", obj)
+        } /*
+        
 
-      let resenia30 = '';
-      if(idURL < heroes.length && req.params.resena != undefined) {
-        for(let i=0; i < heroes[i].resenia.length; i++) {
-          resenia30 = resenia30 + heroes[req.params.id].resenia[i];
+        
+        
+        hero ? (res.render("heroe", obj)) : (res.render("heroe", error));*/
+      },
+      resenia: (req, res, next) => {
+        let {id, tipo} = req.params;
+
+        for(let i=0; i < datosHeroes.length; i++) {
+
+          if(datosHeroes[i].id == id && tipo === "completa") {
+            heroe = datosHeroes[i];
+            return res.render("resenia", {
+              nombre: heroe.nombre,
+              resenia: heroe.resenia,
+              error:""
+            });
+
+          } else if(datosHeroes[i].id == id){
+
+            heroe = datosHeroes[i];
+            let reseniaCortada = datosHeroes[i].resenia.split(" ", 30).join(" ") + "...";
+
+            return res.render("resenia", {
+              nombre: heroe.nombre,
+              resenia: reseniaCortada,
+              error:""
+            });
+          }
         }
-        return (res.send(resenia30));
+
+        return res.render("resenia", {
+          error:"no existe un heroe con el id: ", id
+        });
       }
-    res.send(heroes[idURL].profesion);
-    }    
 }
 
-module.exports = heroesController;
+module.exports = controller;
