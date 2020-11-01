@@ -1,0 +1,20 @@
+En la clase sincrónica vamos a trabajar retomando los contenidos vistos en esta clase para lo cual te pedimos que traigas todas tus dudas. Podés chequear con las siguientes preguntas y recordá que no hace falta que sepas todas las respuestas, lo importante es que traigas todas las dudas al encuentro con tus profes:
+
+¿Que es una Vista dentro del patrón MVC?
+-Es la parte visual de nuestro proyecto, se encarga de mostrarselo al usuario
+
+¿Por qué necesitamos que las vistas sean archivos dinámicos?
+-Porque asi podemos optimizar nuestro tiempo, y no tener codigo repetido
+
+¿Cuales son los Template Engine más usados en Express?
+-Jude, EJS, pug entre otros
+
+¿Por qué usamos EJS sobre Pug o Handlebars?
+-Porque la sintaxis es lo mas parecido a JS posible
+
+¿Una vista de EJS es lo mismo que un archivo HTML?
+-Si, y no, ya que es igual pero esta permite usar codigo JS desde el lado del backend
+
+Si EJS es tan parecido a HTML ¿Por qué no usar solamente HTML?
+-Porque EJS nos da funcionalidades como poder manipular variabless, incluir archivos
+parciales o poder incluir codigo del lado del back y no en front
