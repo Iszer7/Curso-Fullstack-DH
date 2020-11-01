@@ -4,12 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-
-
 var indexRouter = require('./routes/index');
-var heroesRouter = require('./routes/heroes');
 var usersRouter = require('./routes/users');
-
+//Requerimos nuestro archivo de rutas para heroes
+var heroRouter = require(path.resolve(__dirname,'./routes/hero'));
 
 var app = express();
 
@@ -23,11 +21,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-//ROUTES
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/heroes', heroesRouter);
+//Agregamos la ruta /heroes para nuestro archivo de rutas para heroes
+app.use('/heroes', heroRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
