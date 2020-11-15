@@ -1,0 +1,8 @@
+npm install bcrypt --save
+
+//Requerir
+let bcrypt = require('bcrypt');
+bcrypt.hashSync('contraseña', 10);
+
+//Comparar
+let check = bcrypt.compareSync('contrasenia', passEncriptada);

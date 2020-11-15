@@ -1,0 +1,12 @@
+En el siguiente encuentro con tus profes vamos a trabajar retomando los contenidos vistos en esta clase para lo cual te pedimos que traigas todas tus dudas. Podés chequear con las siguientes preguntas y recordá que no hace falta que sepas todas las respuestas, lo importante es que traigas todas las dudas.
+
+¿Pueden existir dos rutas que sean exactamente iguales que viajen por distintos métodos HTTP?
+-Si, una puede usar metodo POST o GET y tener la misma ruta para PUT o DELETE
+¿Cuál es el único método HTTP que nos deja hacer pedidos desde la barra de direcciones del navegador?
+-POST
+¿Por qué usar POST por encima de GET si éste últimos es mucho más sencillo?
+-POST da seguridad, no se puede guardar en el historia, marcadores y no se puede ver en la url ya que va encriptado
+¿Qué se necesita en la aplicación para poder obtener los datos que vienen de un formulario HTML?
+-Es neceario implementar el paquete de method-override
+¿Qué es eso de req.body?
+-Es lo que viaja al enviar un formulario, son todos los elementos marcados como "name" y su valor "value", dentro de un objeto.

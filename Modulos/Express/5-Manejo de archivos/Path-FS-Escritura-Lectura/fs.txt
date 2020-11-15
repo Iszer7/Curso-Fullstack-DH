@@ -1,0 +1,14 @@
+const fs = require('fs');
+
+//Lo remplaza
+fs.writeFileSync('estrenos.txt', 'Titanic 2')
+
+//Escribir json
+let peliculaJson = JSON.stringify(pelicula);
+fs.writeFileSync('lista-colores.txt', peliculaJson);
+
+//Escribe al final - appendFileSync()
+
+//Leeer archivos 
+let archivoLeido = fs.readFileSync('prueba.txt', {encoding: 'utf-8'});
+let archivosLeidoJson = JSON.parse(archivoLeido);

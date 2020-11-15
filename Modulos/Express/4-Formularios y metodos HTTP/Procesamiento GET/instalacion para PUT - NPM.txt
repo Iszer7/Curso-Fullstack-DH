@@ -1,0 +1,11 @@
+npm install method-override --save
+
+
+-------------
+Incluirlo en app.js
+
+//Pedirlo
+let methodOverride = require('method-override');
+
+//Usarlo
+app.use(methodOverride("_method"));

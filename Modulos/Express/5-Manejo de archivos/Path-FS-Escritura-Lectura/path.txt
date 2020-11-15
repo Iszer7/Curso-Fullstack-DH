@@ -1,0 +1,6 @@
+var path = require('path');
+
+//Metodos de PATH
+let archivoUsuarios = path.join('..', 'files', 'users', 'users.json');    //Para las rutas
+let extension = path.extname(archivoUsuarios); 		 //Devuelve la extension de ese archivo -> .json
+let directorio = path.dirname(archivoUsuarios);		 //Solo muestra las carpetas para llegar al archivo
