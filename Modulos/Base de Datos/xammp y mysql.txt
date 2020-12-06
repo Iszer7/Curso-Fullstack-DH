@@ -1,0 +1,12 @@
+Abrir XAMPP, poner apache y mysql START
+
+Para acceder a una base de datos local:
+si escribo "localhost/phpmyadmin"
+
+Es lo mismo que workbench, pero workbench hay que configurarlo
+PHPmyAdmin se conecta automaticamente, y solo puede tener base de datos locales
+
+-Workbench puede conectarse a base de datos online
+
+-En coneccciones, pones nombre, hostname, puerto y usuario.. Viene todo por defecto
+El puerto de MySql 3306, es el que hay que usar en workbench
