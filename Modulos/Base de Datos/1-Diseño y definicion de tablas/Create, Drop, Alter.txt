@@ -1,0 +1,28 @@
+Abrir XAMPP, poner apache y mysql START
+
+Para acceder a una base de datos local:
+si escribo "localhost/phpmyadmin"
+
+Es lo mismo que workbench, pero workbench hay que configurarlo
+PHPmyAdmin se conecta automaticamente, y solo puede tener base de datos locales
+
+-Workbench puede conectarse a base de datos online
+
+-En coneccciones, pones nombre, hostname, puerto y usuario.. Viene todo por defecto
+El puerto de MySql 3306, es el que hay que usar en workbench
+--------------------------------------------------------------------------------------
+CREATE TABLE `movies_db`.`directores` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  `comments` LONGTEXT NULL,
+  `birthday` DATE NULL,
+  PRIMARY KEY (`id`),
+);
+--------------------------------------------------------------------------------------
+ALTER TABLE `movies_db`.`directores` 
+ADD COLUMN `last_name` VARCHAR(100) NOT NULL AFTER `birthday`;
+--------------------------------------------------------------------------------------
+ALTER TABLE `movies_db`.`directores` 
+DROP COLUMN `last_name`;
+--------------------------------------------------------------------------------------
+DROP TABLE `movies_db`.`directors`; #Tira un error si hay una clave foranea

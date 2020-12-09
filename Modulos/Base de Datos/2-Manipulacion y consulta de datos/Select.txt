@@ -1,0 +1,5 @@
+PARA HACER CONSULTAS
+-----------------------------------------
+SELECT * FROM movies
+-----------------------------------------
+SELECT title, rating * 10, awards FROM movies

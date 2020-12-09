@@ -1,0 +1,2 @@
+SELECT title AS titulo, rating * 10 AS 'rating hasta 100'
+FROM movies, genres, actors AS a
