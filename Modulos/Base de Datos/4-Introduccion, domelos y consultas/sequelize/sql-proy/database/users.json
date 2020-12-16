@@ -1,0 +1,37 @@
+[
+    {
+        "username": "das",
+        "email": "kippes.diego@gmail.com",
+        "nombre": "KIPPES",
+        "age": "23",
+        "password": "123456789"
+    },
+    {
+        "username": "",
+        "email": "",
+        "nombre": "",
+        "age": "",
+        "password": ""
+    },
+    {
+        "username": "",
+        "email": "",
+        "nombre": "",
+        "age": "",
+        "password": ""
+    },
+    {
+        "username": "rewerwrewwer",
+        "email": "kippes@gmail.com",
+        "nombre": "KIPPES",
+        "age": "12",
+        "password": "1234567899"
+    },
+    {
+        "username": "dkippes",
+        "email": "diego@diego.com",
+        "nombre": "Diego",
+        "age": "25",
+        "password": "12345678"
+    }
+]

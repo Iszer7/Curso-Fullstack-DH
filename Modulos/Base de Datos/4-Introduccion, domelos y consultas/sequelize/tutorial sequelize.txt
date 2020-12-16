@@ -1,0 +1,23 @@
+npm install sequelize-cli -g
+npm install --save sequelize
+npm install --save mysql2
+
+crear un archivo llamado ".sequelizerc"
+Agregar dentro:
+
+const path = require('path')
+
+module.exports = {
+    config: path.resolve('./database/config', 'config.js'),
+    'models-path': path.resolve('./database/models'),
+    'seeders-path': path.resolve('./database/seeders'),
+    'migrations-path': path.resolve('./database/migrations'),
+}
+------------------------------------------------------------
+Ejecutar = sequelize init -> Crea las carpetas archivos
+----------------------------
+Entrar a config.js -> exportarlo
+En models se exporta una variable "db" que se usa para consultar la base de datos
+--
+Crear un archivo dentro de models .js
+Agregar las tablas y describir como es nuestra base de datos

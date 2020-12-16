@@ -1,0 +1,21 @@
+instalar express-validator
+npm install express-validator -- save
+
+express-validator es un middleware, se pide 3 propiedades de un objeto
+
+se trabaja en la ruta
+
+https://express-validator.github.io/docs/
+
+validar lo necesario, dentro de check va el campo "name"
+
+Trabajar en el controller
+
+Pasarle la carpeta de requerimientos
+
+Validar dentro del controlador y pasarle los errores
+
+Validar dentro de la vista ejs y mostrar los errores
+
+---------------------------------------------------------------------
+comparar contraseñas
