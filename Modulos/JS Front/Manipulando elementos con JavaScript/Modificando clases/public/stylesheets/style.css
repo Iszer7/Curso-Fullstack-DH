@@ -6,3 +6,10 @@ body {
 a {
   color: #00B7FF;
 }
+
+.titulo-destacado {
+  color: crimson;
+  font-size: 50px;
+  border: solid 1px green;
+  border-radius: 10px;
+}
