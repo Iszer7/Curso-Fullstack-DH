@@ -17,3 +17,7 @@ for (const unParrafo of losParrafos) {
 //Agarrando el strong de un parrafo
 let strong = document.querySelector('.parrafo-especial strong');
 console.log(strong);
+
+//Capturar un ID
+let imagen = document.getElementById("logo-node");
+console.log(imagen);
