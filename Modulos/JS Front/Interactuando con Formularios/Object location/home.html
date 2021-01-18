@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        console.log(location);
+        console.log(location.href);
+        console.log(location.search); //Nos da directo el query string = "?search_query=..."
+        console.log(location.reload);
+        let querySearch = new URLSearchParams(location.search);
+        console.log(querySearch.has('hola')); //Devuelve un booleano si hay un parm en el query string
+        console.log(querySearch.get('hola')); //Devuelve que busco el usuario
+    </script>
+</body>
+</html>
