@@ -1,16 +1,28 @@
 window.addEventListener("load", function() {
+    let formulario = document.querySelector('form.reservation');
+    console.log(document.getElementById("name"));
 
-    let i = 1;
+    formulario.addEventListener('submit', (e) => {
+        
 
-    //setTimeOut ejecuta algo despues de un tiempo
-    //setInterval ejecuta algo cada cierto tiempo, infinitas veces
-    let repeticionVueltas = setInterval(function(){
-        document.querySelector(".home-button").innerHTML = "Vuelta numero " + i
-        i++;
-    }, 3000) //Despues de 3 segundos se ejecuta
+        let errores = [];
 
-    //Con clearInterval para el setInterval
-    document.querySelector(".home-button").onclick = function() {
-        clearInterval(repeticionVueltas)
-    }
+        let campoNombre = document.getElementById("name");
+
+        if(campoNombre.value == "") {
+            errores.push('el campo de nombre tiene que estar completo')
+        } else if(campoNombre.value.length < 3) {
+            errores.push('el campo de nombre debe tener al menos 3 caracteres')
+        }
+
+        if(errores.length > 0) {
+            e.preventDefault();
+            let ulErrores = document.querySelector('div.errores ul');
+
+            for(let i=0; i < errores.length; i++) {
+                ulErrores.innerHTML += "<li>" + errores[i] + "</li>"
+            }
+        }
+    })
+    
 })

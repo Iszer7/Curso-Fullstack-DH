@@ -21,7 +21,7 @@ window.addEventListener('load', function() {
 
     //Cuando el formulario se envia que pase algo preventDefault hace que no se envie el formulario
     form.addEventListener("submit", function(e) {
-        window.alert('el formulario se esta por enviar: submit')
+        window.alert('el formulario se esta por enviar: submit');
         e.preventDefault()
         
     })
