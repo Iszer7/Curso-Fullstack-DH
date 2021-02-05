@@ -1,0 +1,2 @@
+npx create-react-app mi-app-de-react
+npn init react-app mi-app-de-react
