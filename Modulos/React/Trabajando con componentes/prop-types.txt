@@ -1,0 +1,2 @@
+****Sirve para verificar el tipo de prototipo y si es necesario que este en props
+npm install prop-types --save
