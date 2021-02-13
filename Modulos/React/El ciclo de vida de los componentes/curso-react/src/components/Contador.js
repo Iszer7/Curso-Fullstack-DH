@@ -16,8 +16,16 @@ class Contador extends Component {
     this.setState({ numero: this.state.numero - 1 });
   }
 
+  componentDidMount() {
+      console.log('Me monte');
+  }
+
+  componentDidUpdate() {
+      console.log('Me actualize');
+  }
+
   render() {
-      console.log('estoy renderizando');
+    console.log('estoy renderizando');
     return (
       <div>
         <p>Soy el numero {this.state.numero} </p>
