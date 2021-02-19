@@ -5,12 +5,10 @@ import './assets/css/app.css';
 
 function App() {
   return (
-    <body>
       <div id="wrapper">
         <SideBar></SideBar>
         <MainContent></MainContent>
       </div>
-    </body>
   );
 }
 
